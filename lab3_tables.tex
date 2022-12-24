@@ -1,0 +1,192 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage{color}
+
+\begin{document}
+
+\title{My First Document}
+\author{Jakir Hasan}
+\date{\today}
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\newpage
+\pagenumbering{arabic}
+
+\setcounter{chapter}{1}
+
+\addcontentsline{toc}{chapter}{Practical 1: Document Structure}
+\chapter*{Practical 1: Document Structure}
+
+\section{Introduction}
+This is the introduction.
+
+\section{Methods}
+
+\subsection{Stage 1}
+\label{sec1}
+The first part of the methods.
+
+\subsection{Stage 2}
+The second part of the methods.
+
+\section{Results}
+Here are my results. Refering to section \ref{sec1} on page \pageref{sec1}.
+
+
+\setcounter{chapter}{2}
+\addcontentsline{toc}{chapter}{Practical 2: Typesetting Text}
+\chapter*{Practical 2: Typesetting Text}
+
+\section{Font Effects}
+
+\textit{words in italic}\\
+\textsl{words slanted}\\
+\textsc{words in smallcaps}\\
+\textbf{words in bold}\\
+\texttt{words in teletype}\\
+\textsf{sans serif words}\\
+\textrm{roman words}\\
+\underline{underlined words}
+
+\section{Coloured Text}
+
+{\color{red}fire} \\
+{\color{red}Red}, {\color{green}green}, {\color{blue}blue}, {\color{magenta}magenta}, {\color{yellow}yellow}, and {\color{white}white}.
+
+\section{Font Sizes}
+
+{\tiny tiny words}\\
+{\scriptsize scriptsize words}\\
+{\footnotesize footnotesize words}\\
+{\small small words}\\
+{\normalsize normalsize words}\\
+{\large large words}\\
+{\Large Large words}\\
+{\LARGE LARGE words}\\
+{\huge huge words}
+
+
+\section{Lists}
+
+\begin{enumerate}
+\item First thing
+\item Second thing
+\begin{itemize}
+\item A sub-thing
+\item Another sub-thing
+\end{itemize}
+\item Third thing
+\end{enumerate}
+
+
+\begin{itemize}
+\item[-] First thing
+\item[+] Second thing
+\begin{itemize}
+\item[Fish] A sub-thing
+\item[Plants] Another sub-thing
+\end{itemize}
+\item[Q] Third thing
+\end{itemize}
+
+\vspace{12pt}
+
+\section{Comments \& Spacing}
+
+Believe that life is worth living% Note comic irony in the very first sentence
+, and your belief will help create the fact.
+
+
+\section{Special Characters}
+
+\#   \$  \%  \^{}  \&  \_  \{  \}  \~{}  \textbackslash
+
+
+\section{Checkpoint 2}
+\#1A\textbackslash642 costs \$8 \& is sold at a \~{}10\% profit.
+
+\setcounter{chapter}{3}
+\addcontentsline{toc}{chapter}{Practical 3: Tables}
+\chapter*{Practical 3: Tables}
+
+\section{Tables}
+
+\begin{table}
+\begin{tabular}{|l|l|}
+Apples & Green\\
+Strawberries & Red\\
+Oranges & Orange\\
+\end{tabular}
+\caption{Fruits}
+\label{table1}
+\end{table}
+
+Table \ref{table1} shows fruits.
+
+\vspace{12pt}
+
+\begin{tabular}{rc}
+Apples & Green\\
+\hline
+Strawberries & Red\\
+\cline{1-1}
+Oranges & Orange\\
+\end{tabular}
+
+\vspace{12pt}
+
+\begin{tabular}{|r|c|}
+\hline
+8 & here's\\
+\cline{2-2}
+86 & stuff\\
+\hline
+\hline
+2008 & now\\
+\hline
+\end{tabular}
+
+\vspace{12pt}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{Country List}\\
+\hline
+Country Name & ALPHA 2 Code & ALPHA 3 Code & Numeric Code\\
+\hline
+Afghanistan & AF & AFG & 004\\
+Albania & AL & ALB & 008\\
+Algeria & DZ & DZA & 012\\
+Angola & AO & AGO & 024\\
+\hline
+\end{tabular}
+
+\newpage
+\section{Checkpoint 3}
+
+\begin{tabular}{l|r|r}
+Item & Quantity & Price(\$)\\
+\hline
+Nails & 500 & 0.34\\
+Wooden boards & 100 & 4.00\\
+Bricks & 240 & 11.50\\
+\end{tabular}
+
+\vspace{12pt}
+
+\begin{tabular}{l | c c c}
+\multicolumn{1}{l |}{} &
+\multicolumn{3}{c}{Year}\\
+\cline{2-4}
+City & 2006 & 2007 & 2008\\
+\hline
+London & 45789 & 46551 & 51298\\
+Berlin & 34549 & 32543 & 29870\\
+Paris & 49835 & 51009 & 51970\\
+\end{tabular}
+
+\end{document}
+
